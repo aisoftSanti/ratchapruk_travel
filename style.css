@@ -962,7 +962,10 @@ ul.nav-menu li:last-child {
 	margin-bottom: 120px !important;
 }
 #primary {
-	background-color: #333333;
+	background-color: #FFF;
+}
+.first-page {
+	background-color: #333333 !important;
 }
 .box_search {
 	height: 270px;

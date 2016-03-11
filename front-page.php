@@ -14,7 +14,7 @@
 
 get_header(); ?>
 
-<div id="primary" class="content-area">
+<div id="primary" class="content-area first-page">
 	<main id="main" class="site-main" role="main">
 		<div class="slider">
 			<?php wd_slider(1); ?>
@@ -69,7 +69,7 @@ get_header(); ?>
                                                                 </table>
       </td>
     </tr>
-    
+
     <tr><td>
       <table width="100%" border="0" cellspacing="0" cellpadding="0">
           <tr><td class="cssflight">From</td>
@@ -79,7 +79,7 @@ get_header(); ?>
             <td></td>
         </tr></table>
       </td></tr>
-    
+
     <tr><td>
       <table width="100%" border="0" cellspacing="0" cellpadding="0">
           <tr><td><div id="myAutoCompleteDEPARTCITY">
@@ -111,7 +111,7 @@ get_header(); ?>
 							<option value="7">7</option>
 							<option value="8">9</option>
 						</select></td>
-            
+
         				<td><select id="CHILDS" name="CHILDS">
 							<option value="0" selected="">0</option>
 							<option value="1">1</option>
@@ -131,9 +131,9 @@ get_header(); ?>
             <td>&nbsp;</td>
         </tr></table>
       </td></tr>
-		
+
     <tr><td>
-      
+
       </td></tr>
   </table>
         </form>

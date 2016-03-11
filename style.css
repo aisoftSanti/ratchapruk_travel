@@ -1087,3 +1087,8 @@ table.striped > tbody > tr:nth-child(even) {
 		/*position: absolute;*/
 	}
 }
+
+.promo-table {
+	height: 300px;
+	overflow-y; auto;
+}

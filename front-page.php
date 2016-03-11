@@ -24,8 +24,8 @@ get_header(); ?>
 				<div class="row">
 					<div class="col s12"><h2>Flight Search</h2></div>
 				</div>
-        <!--Start SearchBox -->
-<form name="AirSearchForm" method="post" action="http://www3.plusibe.com/IBESTDWebTH/SearchWaiting.aspx?SC=BKKOK27Z6" target="_top">
+				<!--Start SearchBox -->
+				<form name="AirSearchForm" method="post" action="http://www3.plusibe.com/IBESTDWebTH/SearchWaiting.aspx?SC=BKKOK27Z6" target="_top">
 					<input type="hidden" name="LANG" value="en">
 					<input type="hidden" name="FLOW_NAME" value="AIRSEARCH">
 					<input type="hidden" name="SEARCHTYPE" value="1">
@@ -51,93 +51,114 @@ get_header(); ?>
 					<input type="hidden" name="corp_group_code" value="B2C">
 					<input type="hidden" name="corp_flow" value="2">
 					<input type="hidden" name="MASTER_NoOfRecommendation" value="200">
-  <table width="100%" border="0" cellspacing="0" cellpadding="0">
-    <tr>
-      <td>
-        <table width="100%" border="0" cellspacing="0" cellpadding="0">
-                                                               <tr>
-                                                                <td width="150px">
-                                                                    <input name="TYPEOFTRIP" id="TYPEOFTRIP_R" type="radio" value="R" onClick="TYPEOFTRIP_onClick('R');"
-                                                                        checked>
-                                                                    &nbsp;<label for="TYPEOFTRIP_R" class="cssflight">Round Trip</label>
-                                                                </td>
-                                                                <td>
-                                                                    <input name="TYPEOFTRIP" id="TYPEOFTRIP_O" type="radio" value="O" onClick="TYPEOFTRIP_onClick('O');">&nbsp;
-                                                                    &nbsp;<label for="TYPEOFTRIP_O" class="cssflight">Oneway</label>
-                                                                </td>
-                                                                </tr>
-                                                                </table>
-      </td>
-    </tr>
+					<table width="100%" border="0" cellspacing="0" cellpadding="0">
+						<tr>
+							<td>
+								<table width="100%" border="0" cellspacing="0" cellpadding="0">
+									<tr>
+										<td width="150px">
+											<input name="TYPEOFTRIP" id="TYPEOFTRIP_R" type="radio" value="R" onClick="TYPEOFTRIP_onClick('R');"
+											checked>
+											&nbsp;<label for="TYPEOFTRIP_R" class="cssflight">Round Trip</label>
+										</td>
+										<td>
+											<input name="TYPEOFTRIP" id="TYPEOFTRIP_O" type="radio" value="O" onClick="TYPEOFTRIP_onClick('O');">&nbsp;
+											&nbsp;<label for="TYPEOFTRIP_O" class="cssflight">Oneway</label>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
 
-    <tr><td>
-      <table width="100%" border="0" cellspacing="0" cellpadding="0">
-          <tr><td class="cssflight">From</td>
-        				<td class="cssflight">To</td>
-            		<td class="cssflight">Departure Date</td>
-            		<td class="cssflight">Return Date</td>
-            <td></td>
-        </tr></table>
-      </td></tr>
+						<tr>
+							<td>
+								<table width="100%" border="0" cellspacing="0" cellpadding="0">
+									<tr>
+										<td class="cssflight">From</td>
+										<td class="cssflight">To</td>
+										<td class="cssflight">Departure Date</td>
+										<td class="cssflight">Return Date</td>
+										<td></td>
+									</tr>
+								</table>
+							</td>
+						</tr>
 
-    <tr><td>
-      <table width="100%" border="0" cellspacing="0" cellpadding="0">
-          <tr><td><div id="myAutoCompleteDEPARTCITY">
-                  <input type="text" class="cssflighttextbox" name="DEPARTCITY" id="DEPARTCITY" value="Bangkok [BKK] - Thailand" />
-                                                                        <div id="myContainerDEPARTCITY">
-                                                                        </div>
-                                                                    </div></td>
-        				<td><div id="myAutoCompleteRETURNCITY">
-                  <input type="text" class="cssflighttextbox" name="RETURNCITY" id="RETURNCITY" value="" />
-                                                                        <div id="myContainerRETURNCITY">
-                                                                        </div>
-                                                                    </div></td>
-            <td><a href="javascript:void(0);" onClick="$('#DEPARTDATE').focus()">
-              <input type="text" class="cssflightcarlendar" name="DEPARTDATE" id="DEPARTDATE" value="" /></a></td>
-            		<td id="tbReturnDate_input"><a href="javascript:void(0);" onClick="$('#RETURNDATE').focus()">
-              <input type="text" class="cssflightcarlendar" name="RETURNDATE" id="RETURNDATE" value="" /></a></td>
-            <td>&nbsp;</td>
-        </tr></table>
-      </td></tr>
-    <tr><td>
-    <table width="50%" border="0" cellspacing="0" cellpadding="0">
-      <tr><td><select id="ADULTS" name="ADULTS" onChange="ADULTS_setOptions(this.form, this.form.ADULTS, this.form.CHILDS, this.form.INFANTS);">
-							<option value="1" selected="">1</option>
-							<option value="2">2</option>
-							<option value="3">3</option>
-							<option value="4">4</option>
-							<option value="5">5</option>
-							<option value="6">6</option>
-							<option value="7">7</option>
-							<option value="8">9</option>
-						</select></td>
+						<tr>
+							<td>
+								<table width="100%" border="0" cellspacing="0" cellpadding="0">
+									<tr>
+										<td>
+											<div id="myAutoCompleteDEPARTCITY">
+												<input type="text" class="cssflighttextbox" name="DEPARTCITY" id="DEPARTCITY" value="Bangkok [BKK] - Thailand" />
+												<div id="myContainerDEPARTCITY">
+												</div>
+											</div>
+										</td>
+										<td>
+											<div id="myAutoCompleteRETURNCITY">
+												<input type="text" class="cssflighttextbox" name="RETURNCITY" id="RETURNCITY" value="" />
+												<div id="myContainerRETURNCITY">
+												</div>
+											</div>
+										</td>
+										<td>
+											<a href="javascript:void(0);" onClick="$('#DEPARTDATE').focus()">
+												<input type="text" class="cssflightcarlendar" name="DEPARTDATE" id="DEPARTDATE" value="" />
+											</a>
+										</td>
+										<td id="tbReturnDate_input">
+											<a href="javascript:void(0);" onClick="$('#RETURNDATE').focus()">
+												<input type="text" class="cssflightcarlendar" name="RETURNDATE" id="RETURNDATE" value="" />
+											</a>
+										</td>
+										<td>&nbsp;</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<table width="50%" border="0" cellspacing="0" cellpadding="0">
+									<tr><td><select id="ADULTS" name="ADULTS" onChange="ADULTS_setOptions(this.form, this.form.ADULTS, this.form.CHILDS, this.form.INFANTS);">
+										<option value="1" selected="">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+										<option value="6">6</option>
+										<option value="7">7</option>
+										<option value="8">9</option>
+									</select></td>
 
-        				<td><select id="CHILDS" name="CHILDS">
-							<option value="0" selected="">0</option>
-							<option value="1">1</option>
-							<option value="2">2</option>
-							<option value="3">3</option>
-							<option value="4">4</option>
-							<option value="5">5</option>
-							<option value="6">6</option>
-							<option value="7">7</option>
-							<option value="8">8</option>
-						</select></td>
-            <td><select id="INFANTS" name="INFANTS">
-							<option value="0" selected="">0</option>
-							<option value="1">1</option>
-						</select></td>
-            		<td>&nbsp;</td>
-            <td>&nbsp;</td>
-        </tr></table>
-      </td></tr>
+									<td><select id="CHILDS" name="CHILDS">
+										<option value="0" selected="">0</option>
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+										<option value="6">6</option>
+										<option value="7">7</option>
+										<option value="8">8</option>
+									</select></td>
+									<td><select id="INFANTS" name="INFANTS">
+										<option value="0" selected="">0</option>
+										<option value="1">1</option>
+									</select></td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+								</tr>
+							</table>
+						</td></tr>
 
-    <tr><td>
+						<tr><td>
 
-      </td></tr>
-  </table>
-        </form>
-			</div>
+						</td></tr>
+					</table>
+				</form>
+			</div><!-- .box_search -->
+		</div><!-- .search_container -->
 		<div class="container">
 			<div class="row promotion">
 				<div class="col s6">
@@ -152,7 +173,8 @@ get_header(); ?>
 							</tr>
 						</thead>
 
-						<tbody>
+						<tbody class="promo-table">
+
 							<tr>
 								<td><img style="vertical-align: middle;" src="<?php echo get_template_directory_uri(); ?>/img/thai_logo.png"></td>
 								<td>BANGKOK (BKK)</td>

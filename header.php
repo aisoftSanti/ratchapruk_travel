@@ -35,7 +35,7 @@
 		<header id="masthead" class="site-header" role="banner">
 			<div class="container row" style="margin-bottom: 0;">
 				<div class="site-branding col s4" style="padding: 0;">
-					<a href="<?php home_url( $path, $scheme ); ?>">
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
 						<img style="height: 80px;margin-top: 15px;margin-bottom: 0px;" src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.png">
 					</a>
 				</div><!-- .site-branding -->
